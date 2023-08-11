@@ -26,7 +26,9 @@ const { Triangle, Circle, Square } = require("./lib/shapes");
     ${selectedShape.render()}
     <text x="${selectedShape.centerX()}" y="${selectedShape.centerY()}" text-anchor="middle" fill="${
     userInput.textColor
-  }">${userInput.text}</text>
+  }">${userInput.text}
+        <tspan font-weight="bold">${userInput.text}</tspan>
+</text>
   </svg>
 `;
 

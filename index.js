@@ -22,13 +22,13 @@ const { Triangle, Circle, Square } = require("./lib/shapes");
   selectedShape.setColor(userInput.shapeColor);
 
   const svgContent = `
-    <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-      ${selectedShape.render()}
-      <text x="150" y="30" text-anchor="middle" fill="${userInput.textColor}">${
-    userInput.text
-  }</text>
-    </svg>
-  `;
+  <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    ${selectedShape.render()}
+    <text x="${selectedShape.centerX()}" y="${selectedShape.centerY()}" text-anchor="middle" fill="${
+    userInput.textColor
+  }">${userInput.text}</text>
+  </svg>
+`;
 
   const svgFilePath = path.join("examples", "logo.svg");
 

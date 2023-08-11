@@ -24,11 +24,11 @@ const { Triangle, Circle, Square } = require("./lib/shapes");
   const svgContent = `
   <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
     ${selectedShape.render()}
-    // <text x="${selectedShape.centerX()}" y="${selectedShape.centerY()}" text-anchor="middle" fill="${
+    <text x="${selectedShape.centerX()}" y="${selectedShape.centerY()}" text-anchor="middle" fill="${
     userInput.textColor
-  }">${userInput.text}
-        <tspan font-weight="bold">${userInput.text}</tspan>
-</text>
+  }"> 
+      <tspan font-weight="bold">${userInput.text}</tspan>
+    </text>
   </svg>
 `;
 
